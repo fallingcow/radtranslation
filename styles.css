@@ -40,13 +40,13 @@ p {
 /* Navbar background */
 header {
   background: none; /* Remove default background, we'll style .navbar instead */
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 /* NAVBAR COLORED BAND */
 .navbar {
   background: #0b2ba2;
-  height: 2em;
+  height: 2.5em;
   min-height: 2em;
   position: relative;
   display: flex;
