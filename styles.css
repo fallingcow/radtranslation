@@ -36,6 +36,16 @@ header {
   letter-spacing: 1px;
   font-family: 'Shrikhand', cursive, Arial, sans-serif; /* Ensure logo uses Shrikhand */
 }
+.logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .logo-img {
+    height: 36px;
+  }
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,16 +73,6 @@ main {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 10px rgba(40,40,40,0.08);
-}
-.logo-img {
-  height: 100px;
-  width: auto;
-  display: block;
-}
-@media (max-width: 600px) {
-  .logo-img {
-    height: 36px;
-  }
 }
 
 /* Price List Formatting */
