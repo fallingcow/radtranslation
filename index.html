@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite | Beispielseite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="lang-toggle.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">
-        <img src="images/radlogo.png" alt="Rad Translation Logo" class="logo-img">
-      </a>
+      <a href="index.html" class="logo">Beispielseite</a>
       <ul class="nav-links">
         <li><a href="index.html"><span class="lang-de">Start</span><span class="lang-en" style="display:none;">Home</span></a></li>
         <li><a href="kontakt.html"><span class="lang-de">Kontakt</span><span class="lang-en" style="display:none;">Contact</span></a></li>
-        <li><a href="impressum.html"><span class="lang-de">Impressum</span><span class="lang-en" style="display:none;">Imprint</span></a></li>
-        <li><a href="datenschutz.html"><span class="lang-de">Datenschutz</span><span class="lang-en" style="display:none;">Privacy</span></a></li>
         <li><a href="faq.html"><span class="lang-de">FAQ</span><span class="lang-en" style="display:none;">FAQ</span></a></li>
       </ul>
       <button id="lang-toggle" aria-label="Sprache wechseln" class="lang-toggle-btn">
@@ -25,7 +24,7 @@
       </button>
     </nav>
   </header>
-    <main>
+  <main>
       <h1>
         <span class="lang-de">Willkommen auf der Beispielseite</span>
         <span class="lang-en" style="display:none;">Welcome to the Example Site</span>
@@ -109,6 +108,17 @@
   <footer>
     <span class="lang-de">&copy; 2025 Beispielseite</span>
     <span class="lang-en" style="display:none;">&copy; 2025 Example Site</span>
+    <span class="footer-links">
+      <a href="impressum.html">
+        <span class="lang-de">Impressum</span>
+        <span class="lang-en" style="display:none;">Imprint</span>
+      </a>
+      &nbsp;|&nbsp;
+      <a href="datenschutz.html">
+        <span class="lang-de">Datenschutz</span>
+        <span class="lang-en" style="display:none;">Privacy</span>
+      </a>
+    </span>
   </footer>
 </body>
 </html>
