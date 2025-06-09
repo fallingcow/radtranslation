@@ -54,7 +54,6 @@ header {
   height: 100px;
   width: auto;
   display: block;
-  margin-top: -24px;/* Half of (100px - 2em) ~ to overlap below */
 }
 
 /* NAVIGATION LINKS CENTERED IN BAND */
