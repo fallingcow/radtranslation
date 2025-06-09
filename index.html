@@ -5,30 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite | Beispielseite</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="lang-toggle.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <a href="index.html" class="logo">
-        <img src="images/radlogo.png" alt="RAD Translation Logo" class="logo-img">
+        <img src="images/radlogo.png" alt="Rad Translation Logo" class="logo-img">
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Start</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="index.html"><span class="lang-de">Start</span><span class="lang-en" style="display:none;">Home</span></a></li>
+        <li><a href="kontakt.html"><span class="lang-de">Kontakt</span><span class="lang-en" style="display:none;">Contact</span></a></li>
+        <li><a href="impressum.html"><span class="lang-de">Impressum</span><span class="lang-en" style="display:none;">Imprint</span></a></li>
+        <li><a href="datenschutz.html"><span class="lang-de">Datenschutz</span><span class="lang-en" style="display:none;">Privacy</span></a></li>
       </ul>
+      <button id="lang-toggle" aria-label="Sprache wechseln" class="lang-toggle-btn">
+        <span class="lang-de">EN</span><span class="lang-en" style="display:none;">DE</span>
+      </button>
     </nav>
   </header>
-  <main>
-    <h1>Willkommen auf der Beispielseite</h1>
-    <p>
-      Dies ist eine textlastige, mobilfreundliche Beispielseite.<br>
-      Fügen Sie hier Ihren Textinhalt ein.
-    </p>
+    <main>
+      <h1>
+        <span class="lang-de">Willkommen auf der Beispielseite</span>
+        <span class="lang-en" style="display:none;">Welcome to the Example Site</span>
+      </h1>
+      <p>
+        <span class="lang-de">
+          Dies ist eine textlastige, mobilfreundliche Beispielseite.<br>
+          Fügen Sie hier Ihren Textinhalt ein.
+        </span>
+        <span class="lang-en" style="display:none;">
+          This is a text-heavy, mobile-friendly example site.<br>
+          Add your content here.
+        </span>
+      </p>
+
+        <section class="prices-section">
+          <h2>
+            <span class="lang-de">Unsere Preise &amp; Leistungen</span>
+            <span class="lang-en" style="display:none;">Our Prices &amp; Services</span>
+          </h2>
+          <!-- German Table -->
+          <table class="prices-table lang-de">
+            <thead>
+              <tr>
+                <th>Leistung</th>
+                <th>Preis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Leistung">Standardübersetzung</td>
+                <td data-label="Preis">0,12&nbsp;€/Wort</td>
+              </tr>
+              <tr>
+                <td data-label="Leistung">Fachübersetzung</td>
+                <td data-label="Preis">0,16&nbsp;€/Wort</td>
+              </tr>
+              <tr>
+                <td data-label="Leistung">Korrektorat / Lektorat</td>
+                <td data-label="Preis">0,04&nbsp;€/Wort</td>
+              </tr>
+              <tr>
+                <td data-label="Leistung">Express-Service (24h)</td>
+                <td data-label="Preis">+30&nbsp;% Aufschlag</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- English Table -->
+          <table class="prices-table lang-en" style="display:none;">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Service">Standard Translation</td>
+                <td data-label="Price">€0.12/word</td>
+              </tr>
+              <tr>
+                <td data-label="Service">Specialist Translation</td>
+                <td data-label="Price">€0.16/word</td>
+              </tr>
+              <tr>
+                <td data-label="Service">Proofreading / Editing</td>
+                <td data-label="Price">€0.04/word</td>
+              </tr>
+              <tr>
+                <td data-label="Service">Express Service (24h)</td>
+                <td data-label="Price">+30% surcharge</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="prices-note">
+            <span class="lang-de">Alle Preise zzgl. MwSt. Individuelle Angebote auf Anfrage.</span>
+            <span class="lang-en" style="display:none;">All prices excl. VAT. Individual offers on request.</span>
+          </p>
+        </section>
   </main>
   <footer>
-    &copy; 2025 Beispielseite
+    <span class="lang-de">&copy; 2025 Beispielseite</span>
+    <span class="lang-en" style="display:none;">&copy; 2025 Example Site</span>
   </footer>
 </body>
 </html>
