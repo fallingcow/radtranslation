@@ -252,8 +252,10 @@ main {
   .prices-table th,
   .prices-table td,
   .prices-table tr {
-    display: block;
+/*    display: block; */
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
   .prices-table thead tr { display: none; }
   .prices-table tr {
@@ -271,7 +273,7 @@ main {
     content: attr(data-label);
     font-weight: bold;
     color: #0b2ba2;
-    display: block;
+/*    display: block; */
     margin-bottom: 0.3em;
   }
   .prices-table tr:last-child td {
