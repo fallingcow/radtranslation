@@ -243,8 +243,7 @@ main {
   margin-top: 0.5rem;
   font-style: italic;
 }
-
-/* Responsive Table */
+/*
 @media (max-width: 700px) {
   .prices-table,
   .prices-table thead,
@@ -252,7 +251,6 @@ main {
   .prices-table th,
   .prices-table td,
   .prices-table tr {
-/*    display: block; */
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -273,14 +271,13 @@ main {
     content: attr(data-label);
     font-weight: bold;
     color: #0b2ba2;
-/*    display: block; */
     margin-bottom: 0.3em;
   }
   .prices-table tr:last-child td {
     border-bottom: none;
   }
 }
-
+*/
 /* FAQ Section */
 .faq-section {
   margin-top: 2rem;
