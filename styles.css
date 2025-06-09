@@ -113,18 +113,19 @@ header {
   justify-content: center;
   width: 2.3em;
   height: 2.3em;
-  background: yellow;
-  outline: 2px solid red;
+  background: none;
+  outline: none;
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: 1em;
+  margin-left: 0;
+  margin-right: 0.5em;
   z-index: 100;
 }
 .hamburger span {
   height: 3.5px;
   width: 28px;
-  background: #0b2ba2;
+  background: #fff;
   margin: 4px 0;
   border-radius: 2px;
   display: block;
@@ -164,6 +165,7 @@ header {
   }
   .nav-links.open {
     display: flex;
+    z-index: 99;
   }
   .nav-links li {
     width: 100%;
