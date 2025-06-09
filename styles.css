@@ -14,29 +14,48 @@ body {
   background: #fafafa;
 }
 
-/* Navbar base styles */
+/* Navbar background */
 header {
-  background: #0b2ba2;
-  color: #fff;
+  background: none; /* Remove default background, we'll style .navbar instead */
 }
+
+/* NAVBAR COLORED BAND */
 .navbar {
+  background: #0b2ba2;
+  height: 2em;
+  min-height: 2em;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 900px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
   font-family: 'Shrikhand', cursive, Arial, sans-serif;
-  position: relative;
+  z-index: 2;
+  /* allow overflow for logo */
+  overflow: visible;
 }
+
+/* LOGO IMAGE OVERSIZED AND CENTERED LEFT */
 .logo {
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  font-family: 'Shrikhand', cursive, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  /* keeps logo above navbar background, if needed */
+  height: 100px; /* for alignment purposes */
 }
+.logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-top: -24px;   /* Half of (100px - 2em) ~ to overlap above */
+  margin-bottom: -24px;/* Half of (100px - 2em) ~ to overlap below */
+  /* Adjust -24px if it needs to be more/less centered on your font size */
+}
+
+/* NAVIGATION LINKS CENTERED IN BAND */
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,9 +63,13 @@ header {
   align-items: center;
   margin: 0;
   padding: 0;
+  height: 2em;
 }
 .nav-links li {
   margin: 0;
+  height: 2em;
+  display: flex;
+  align-items: center;
 }
 .nav-links a {
   color: #fff;
@@ -56,9 +79,30 @@ header {
   border-radius: 3px;
   transition: background 0.2s;
   font-family: 'Shrikhand', cursive, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 2em;
 }
 .nav-links a:hover {
   background: #444;
+}
+
+/* Hamburger and language toggle alignment in band */
+.hamburger,
+.lang-toggle-btn {
+  align-self: center;
+}
+
+/* Responsive: adjust logo size and overlap for mobile */
+@media (max-width: 700px) {
+  .logo-img {
+    height: 70px;
+    margin-top: -18px;
+    margin-bottom: -18px;
+  }
+  .navbar {
+    padding: 0 0.5rem;
+  }
 }
 
 /* Hamburger styles */
