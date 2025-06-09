@@ -17,6 +17,7 @@ body {
 /* Navbar background */
 header {
   background: none; /* Remove default background, we'll style .navbar instead */
+  margin-top: 1.5em;
 }
 
 /* NAVBAR COLORED BAND */
@@ -74,7 +75,7 @@ header {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2em;
   padding: 0.2em 0.6em;
   border-radius: 3px;
   transition: background 0.2s;
