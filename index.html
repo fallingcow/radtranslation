@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="lang-toggle.js"></script>
+  <script defer src="nav-toggle.js"></script>
 </head>
 <body>
   <header>
@@ -16,10 +17,15 @@
       <a href="index.html" class="logo">
         <img src="images/radlogo.png" alt="Rad Translation Logo" class="logo-img">
       </a>
-      <ul class="nav-links">
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen / Close menu" aria-controls="nav-links" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html"><span class="lang-de">Start</span><span class="lang-en" style="display:none;">Home</span></a></li>
-        <li><a href="faq.html"><span class="lang-de">FAQ</span><span class="lang-en" style="display:none;">FAQ</span></a></li>
         <li><a href="kontakt.html"><span class="lang-de">Kontakt</span><span class="lang-en" style="display:none;">Contact</span></a></li>
+        <li><a href="faq.html"><span class="lang-de">FAQ</span><span class="lang-en" style="display:none;">FAQ</span></a></li>
       </ul>
       <button id="lang-toggle" aria-label="Sprache wechseln" class="lang-toggle-btn">
         <span class="lang-de">EN</span><span class="lang-en" style="display:none;">DE</span>
