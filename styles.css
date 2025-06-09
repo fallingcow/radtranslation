@@ -119,6 +119,7 @@ header {
   cursor: pointer;
   padding: 0;
   margin-left: 1em;
+  z-index: 100;
 }
 .hamburger span {
   height: 3.5px;
