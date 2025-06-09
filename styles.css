@@ -114,7 +114,8 @@ header {
   justify-content: center;
   width: 2.3em;
   height: 2.3em;
-  background: none;
+  background: yellow;
+  outline: 2px solid red;
   border: none;
   cursor: pointer;
   padding: 0;
